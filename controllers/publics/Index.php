@@ -8,7 +8,12 @@ class Index extends \Controller
 	 */	
 	public function home()
 	{
-		return $this->render("index/home");
+		return $this->render("home");
+	}
+
+	public function login()
+	{
+		return $this->render("login");
 	}
 
     /**
@@ -20,4 +25,5 @@ class Index extends \Controller
 	{
 		return $this->render('index/show-value', ['first_value' => $first_value, 'second_value' => $second_value]);
 	}
+	
 }

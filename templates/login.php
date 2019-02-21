@@ -1,6 +1,11 @@
-<?php require 'header.php'; ?>
+<?php
+$controller = 'Index';
+$function = 'login';
+$title = "Login";
+require PWD_TEMPLATES . '/header.php';
+?>
 
-<form>
+<form class="mt-5 pt-5">
   <div class="form-group">
     <label for="login">Email address</label>
     <input type="email" class="form-control" id="login" placeholder="Enter email">
@@ -10,11 +15,7 @@
     <input type="password" class="form-control" id="password" aria-describedby="passHelp"placeholder="Password">
     <small id="passHelp" class="form-text text-muted">We'll never share your password with anyone else.</small>
   </div>
-  <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submitt</button>
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
-<?php require 'footer.php'; ?>
+<?php require PWD_TEMPLATES . '/footer.php'; ?>
